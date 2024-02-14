@@ -1,17 +1,17 @@
 
-Code Side  |   DB Side
----------------------
-DB setup  -->  DB Formation
-Model     -->  Collection
-Schema    -->  Documents
+Code Side  |   DB Side  
+DB setup  -->  DB Formation  
+Model     -->  Collection  
+Schema    -->  Documents  
 
-
+  
 Model --> Code that we write to create partition in a database is called "Model". That partition in DB is called "Collection".
+  
+Schema --> Partition of collection is called "Document". On code side it is called "schema".  
 
-Schema --> Partition of collection is called "Document". On code side it is called "schema".
+<hr>  
 
-
-Set up
+Set up:
 1. install mongodb
 2. install mongoose.js
 3. require and setup connection
