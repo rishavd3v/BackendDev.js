@@ -11,8 +11,11 @@ const userSchema = mongoose.Schema({
   age: Number
 });
 
-// Collection
+
+// Model / Collection
 module.exports = mongoose.model("user",userSchema); 
-// params -> (name,schema)
+// params -> (collection_name,schema)
+// Model that we created will be exported which we can use elsewhere.
+
 
 // Above steps will create a DB named 'demodb', with a collection named 'user' with properties of 'userSchema'.
