@@ -1,2 +1,0 @@
-Client - cookie
-Server - session
