@@ -2,13 +2,19 @@ const mongoose = require("mongoose");
 
 mongoose.connect("mongodb://127.0.0.1:27017/demodb"); // DB creation
 // 127.0.0.1 is localhost and 27017 is port
-// demodb is name of database.
+// 'demodb' is name of database.
 
 // Schema / Document
 const userSchema = mongoose.Schema({
   username: String,
   name: String,
-  age: Number
+  description: String,
+  categories : [],
+  dateCreated : {
+    type: Date,
+    default : Date.now(),
+  },
+  age: Number,
 });
 
 
